@@ -1,0 +1,13 @@
+form.Customer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 20px;
+}
+
+.Error {
+  color: red;
+}
+
+.Actions button.Delete {
+  background-color: red;
+}

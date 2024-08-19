@@ -1,0 +1,65 @@
+body {
+  padding: 20px;
+}
+
+.Customers {
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 800px) {
+  .Customers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Customers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Customer {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.Customer .FieldName {
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.Customer .Actions {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.Actions button {
+  background-color: blue;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.Actions button:hover {
+  opacity: 0.75;
+}
+
+.Actions button:disabled {
+  background-color: grey;
+}
+
+.Actions button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Actions.AddNew {
+  margin-bottom: 10px;
+}
